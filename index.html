@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function MathSequences(array) {
+   result1= array[2]/array[1];
+   result2= array[1]/array[0];
+   result3= array[2]-array[1];
+   result4= array[1]-array[0]
+   if((result1===result2) && (result3 !== result4)){
+     console.log("The sequence is Geometric");     
+   } else if((result3===result4) && (result1 !== result2)) {
+     console.log("The sequence is Arithmetic");     
+   }else{
+    console.log("The sequence has no pattern");
+     
+   }  
+  }
+  MathSequences([2,4,6,8,10,12,14,16]);
+  MathSequences([3,9,27]);
+  MathSequences([4,7,8,11,10]);
+
+</script>
